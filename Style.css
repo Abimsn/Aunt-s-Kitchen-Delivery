@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+    background-color: #6F4E37;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+  max-width: 64px;
+}
+
+header {
+    background-color: #6F4E37;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    float: left;
+    max-width: 64px;
+}
+
+.nav-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.navicon {
+    max-width: 26px;
+    fill: white;
+    display: block;
+}
+
+nav {
+  background-color: #6F4E37;
+  padding: 10px;
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.banner {
+  background-color: #e0e0e0;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.categories, .food, .drinks {
+  padding: 20px 0;
+}
+
+.category-grid, .food-grid, .drink-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.category, .food-item, .drink-item {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s; /* Menambahkan efek transisi */
+}
+
+.category:hover, .food-item:hover, .drink-item:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Aturan untuk gambar */
+.category img, 
+.food-item img, 
+.drink-item img {
+  max-width: 100%; /* Membuat gambar responsif */
+  border-radius: 8px; /* Membuat sudut gambar melengkung */
+  display: block; /* Mengubah gambar menjadi block untuk memudahkan pemusatan */
+  margin: 0 auto; /* Memusatkan gambar */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek visual */
+}
+
+.drink-item img {
+  width: 100%; /* Membuat gambar responsif */
+  height: 200px; /* Menetapkan tinggi tetap untuk semua gambar minuman */
+  object-fit: cover; /* Memastikan gambar tetap proporsional dan terpotong jika perlu */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  nav ul li {
+      margin-right: 10px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-grid, .food-grid, .drink-grid {
+      flex-direction: column; /* Stack items vertically */
+  }
+}

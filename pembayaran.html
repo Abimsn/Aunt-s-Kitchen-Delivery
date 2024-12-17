@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Harga & Lokasi</title>
+    <link rel="stylesheet" href="pembayaran/pembayaran.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+    <script src="pembayaran/pembayaran.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Total Harga & Lokasi Pengantaran</h1>
+    </header>
+
+    <main>
+        <section id="order-summary">
+            <h2>Detail Pemesanan</h2>
+            <div id="menu-list">
+                <label for="menu-select">Pilih Menu:</label>
+                <select id="menu-select">
+                    <option value="35000">Original Burger - Rp 35.000</option>
+                    <option value="40000">Grilled Chicken - Rp 40.000</option>
+                    <option value="50000">Special Biryani Rice - Rp 50.000</option>
+                    <option value="38000">Original Biryani Rice - Rp 38.000</option>
+                    <option value="70000">Tandoori Chicken - Rp 70.000</option>
+                </select>
+                <button id="add-menu">Tambahkan ke Pesanan</button>
+            </div>
+            <ul id="order-list"></ul>
+            <p><strong>Total Harga:</strong> Rp <span id="total-price">0</span></p>
+        </section>
+
+        <section id="map-section">
+            <h2>Lokasi Pengantaran</h2>
+            <input type="text" id="address-input" placeholder="Masukkan alamat pengantaran">
+            <button id="find-location">Cari Lokasi</button>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aunts Kitchen Resto</p>
+    </footer>
+</body>
+</html>
