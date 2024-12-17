@@ -10,30 +10,27 @@
     <header>
         <div class="container">
             <img src="LOGOAUNTS.png" class="logo" alt="Aunts Kitchen Logo">
-            <div class="icons">
-                <a class="nav-button" id="menu-toggle" aria-label="Toggle navigation">
-                    <svg class="navicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <rect width="24" height="24" rx="2.75" ry="2.75" fill="#8f6e54"/>
-                        <path fill="#fff" d="M19.28,20.3H4.88c-.62,0-1.06-.31-1.21-.83-.21-.7.3-1.43,1.03-1.45.64-.01,1.28,0,1.91,0h12.55c.56,0,.97.26,1.15.74.27.72-.23,1.49-1.03,1.54Z"/>
-                        <path fill="#fff" d="M19.3,5.81c-.55.02-1.09.01-1.62.01H4.85c-.56,0-.97-.27-1.15-.74-.27-.72.23-1.49,1.03-1.54h14.4c.62,0,1.05.3,1.21.82.21.71-.3,1.43-1.03,1.45Z"/>
-                        <path fill="#fff" d="M19.26,13.05c-.73.01-1.45,0-2.18,0H4.81c-.63,0-1.1-.39-1.18-.99-.09-.64.4-1.25,1.05-1.29h14.48c.55,0,.98.29,1.14.77.26.74-.27,1.51-1.05,1.52Z"/>
-                    </svg>
-                </a>
-            </div>
+            <button class="nav-button" id="menu-toggle" aria-label="Toggle navigation">
+                <svg class="navicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <rect width="24" height="24" rx="2.75" ry="2.75" fill="#8f6e54"/>
+                    <path fill="#fff" d="M19.28,20.3H4.88c-.62,0-1.06-.31-1.21-.83-.21-.7.3-1.43,1.03-1.45.64-.01,1.28,0,1.91,0h12.55c.56,0,.97.26,1.15.74.27.72-.23,1.49-1.03,1.54Z"/>
+                    <path fill="#fff" d="M19.3,5.81c-.55.02-1.09.01-1.62.01H4.85c-.56,0-.97-.27-1.15-.74-.27-.72.23-1.49,1.03-1.54h14.4c.62,0,1.05.3,1.21.82.21.71-.3,1.43-1.03,1.45Z"/>
+                    <path fill="#fff" d="M19.26,13.05c-.73.01-1.45,0-2.18,0H4.81c-.63,0-1.1-.39-1.18-.99-.09-.64.4-1.25,1.05-1.29h14.48c.55,0,.98.29,1.14.77.26.74-.27,1.51-1.05,1.52Z"/>
+                </svg>
+            </button>   
         </div>
+        <nav id="navbar" style="display: none;" aria-label="Main navigation">
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav id="navbar" style="display: none;" aria-label="Main navigation">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <section class="banner">
-        <!-- Banner content can be added here -->
+        <!-- Banner content-->
     </section>
 
     <section class="categories">
@@ -64,38 +61,38 @@
                     <img src="Asset/original-burger.jpg" alt="Original Burger" data-harga="35.000">
                     <h4>Original Burger</h4>
                     <h4>Rp 35.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
 
                 </div>
-                <div class="food-item">
+             <div class="food-item">
                     <img src="Asset/grilled-chicken.jpg" alt="Grilled Chicken" data-harga="40.000">
                     <h4>Grilled Chicken</h4>
                     <h4>Rp 40.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="food-item">
                     <img src="Asset/special-biryani.jpg" alt="Special Biryani Rice">
                     <h4>Special Biryani Rice</h4>
                     <h4>Rp 50.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="food-item">
                     <img src="Asset/original-biryani.jpg" alt="Original Biryani Rice">
                     <h4>Original Biryani Rice</h4>
                     <h4>Rp 38.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="food-item">
                     <img src="Asset/creamy-burger.jpg" alt="Creamy Burger">
                     <h4>Creamy Burger</h4>
                     <h4>Rp 35.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="food-item">
                     <img src="Asset/tandoori-chicken.jpg" alt="Tandoori Chicken">
                     <h4>Tandoori Chicken</h4>
                     <h4>Rp 70.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
             </div>
         </div>
@@ -109,37 +106,37 @@
                     <img src="Asset/lemon-tea.jpg" alt="Lemon Tea">
                     <h4>Lemon Tea</h4>
                     <h4>Rp 10.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="drink-item">
                     <img src="Asset/brown-delight.jpg" alt="Brown Delight">
                     <h4>Brown Delight</h4>
                     <h4>Rp 25.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="drink-item">
                     <img src="Asset/mocha-latte.jpg" alt="Mocha Latte">
                     <h4>Mocha Latte</h4>
                     <h4>Rp 20.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="drink-item">
                     <img src="Asset/milkshake.jpg" alt="Milkshake">
                     <h4>Milkshake</h4>
                     <h4>Rp 20.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="drink-item">
                     <img src="Asset/vanilla-latte.jpg" alt="Vanilla Latte">
                     <h4>Vanilla Latte</h4>
                     <h4>Rp 30.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
                 <div class="drink-item">
                     <img src="Asset/coco-milk.jpg" alt="Coco Milk">
                     <h4>Coco Milk</h4>
                     <h4>Rp 20.000</h4>
-                    <button></button> <!--order-->
+                    <button class="Order-button"><p class="Order-text">Add Order</p></button> <!--order-button-->
                 </div>
             </div>
         </div>
@@ -152,12 +149,12 @@
     <script>
         document.getElementById('menu-toggle').addEventListener('click', function() {
             var navbar = document.getElementById('navbar');
-            console.log('Tombol navigasi diklik'); // Tambahkan log ini
-            // Toggle antara menampilkan dan menyembunyikan navigasi
+            console.log('Tombol navigasi di klik');
+            
             if (navbar.style.display === 'none' || navbar.style.display === '') {
-                navbar.style.display = 'block'; // Menampilkan navigasi
+                navbar.style.display = 'block';
             } else {
-                navbar.style.display = 'none'; // Menyembunyikan navigasi
+                navbar.style.display = 'none';
             }
         });
     </script>

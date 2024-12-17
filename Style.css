@@ -36,6 +36,13 @@ header {
     z-index: 1000;
 }
 
+.container {
+  width: 80%;
+  max-width: 1000px;
+  height: inherit;
+  margin: auto;
+}
+
 .logo {
     float: left;
     max-width: 64px;
@@ -47,9 +54,13 @@ header {
     border: none;
     padding: 0;
     cursor: pointer;
+    height: inherit;
+    width: inherit;
 }
 
 .navicon {
+    float: right;
+    margin-top: 1.8%;
     max-width: 26px;
     fill: white;
     display: block;
@@ -57,21 +68,25 @@ header {
 
 nav {
   background-color: #6F4E37;
-  padding: 10px;
   position: absolute;
-  top: 60px;
+  top: 80px;
+  right: 0;
   width: 100%;
   z-index: 1000;
 }
 
+.navbar{
+  float: right;
+  padding-right: 10%;
+}
+
 nav ul {
   list-style: none;
-  padding: 0;
 }
 
 nav ul li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 nav a {
@@ -79,11 +94,6 @@ nav a {
   color: white;
 }
 
-.container {
-  width: 80%;
-  max-width: 1000px;
-  margin: auto;
-}
 
 .banner {
   background-color: #e0e0e0;
@@ -114,6 +124,17 @@ nav a {
 
 .category:hover, .food-item:hover, .drink-item:hover {
   transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.Order-button{
+  background-color: #8f6e54;
+  border-radius: 10px;
+  border-style: hidden;
+}
+
+.Order-text{
+  color: #ffff;
+  padding: 3px;
 }
 
 footer {
