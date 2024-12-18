@@ -111,7 +111,7 @@ nav a {
   flex-wrap: wrap;
 }
 
-.category, .food-item, .drink-item {
+.category, .item {
   flex: 1;
   margin: 10px;
   padding: 15px;
@@ -122,7 +122,7 @@ nav a {
   transition: transform 0.2s; /* Menambahkan efek transisi */
 }
 
-.category:hover, .food-item:hover, .drink-item:hover {
+.category:hover, .item:hover {
   transform: scale(1.05); /* Efek zoom saat hover */
 }
 
@@ -148,20 +148,13 @@ footer {
 }
 
 /* Aturan untuk gambar */
-.category img, 
-.food-item img, 
-.drink-item img {
+.category img,  
+.item img {
   max-width: 100%; /* Membuat gambar responsif */
   border-radius: 8px; /* Membuat sudut gambar melengkung */
   display: block; /* Mengubah gambar menjadi block untuk memudahkan pemusatan */
   margin: 0 auto; /* Memusatkan gambar */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan untuk efek visual */
-}
-
-.drink-item img {
-  width: 100%; /* Membuat gambar responsif */
-  height: 200px; /* Menetapkan tinggi tetap untuk semua gambar minuman */
-  object-fit: cover; /* Memastikan gambar tetap proporsional dan terpotong jika perlu */
 }
 
 /* Media Queries for responsiveness */
