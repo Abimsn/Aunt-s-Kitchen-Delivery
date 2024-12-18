@@ -32,18 +32,3 @@
     text-decoration: none;
     cursor: pointer;
 }
-
-.item:hover{
-    transform: scale(1.05);
-}
-
-.Order-button{
-    background-color: #8f6e54;
-    border-radius: 10px;
-    border-style: hidden;
-  }
-  
-  .Order-text{
-    color: #ffff;
-    padding: 3px;
-  }

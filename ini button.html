@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efek Transformasi</title>
+  <style>
+    .transform-item {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .transform-item.active {
+      transform: scale(1.2) rotate(10deg);
+      background-color: #FF5722;
+    }
+  </style>
+</head>
+<body>
+  <div class="transform-item" id="myItem">Klik Saya</div>
+
+  <script>
+    document.getElementById('myItem').addEventListener('click', function () {
+      this.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

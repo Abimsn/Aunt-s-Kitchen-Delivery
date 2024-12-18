@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aunts Kitchen Resto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="keranjang.css">
 </head>
 <body>
     <header>
         <div class="container">
             <img src="LOGOAUNTS.png" class="logo" alt="Aunts Kitchen Logo">
-            <button class="nav-button" id="menu-toggle" aria-label="Toggle navigation">
-                <svg class="navicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <rect width="24" height="24" rx="2.75" ry="2.75" fill="#8f6e54"/>
-                    <path fill="#fff" d="M19.28,20.3H4.88c-.62,0-1.06-.31-1.21-.83-.21-.7.3-1.43,1.03-1.45.64-.01,1.28,0,1.91,0h12.55c.56,0,.97.26,1.15.74.27.72-.23,1.49-1.03,1.54Z"/>
-                    <path fill="#fff" d="M19.3,5.81c-.55.02-1.09.01-1.62.01H4.85c-.56,0-.97-.27-1.15-.74-.27-.72.23-1.49,1.03-1.54h14.4c.62,0,1.05.3,1.21.82.21.71-.3,1.43-1.03,1.45Z"/>
-                    <path fill="#fff" d="M19.26,13.05c-.73.01-1.45,0-2.18,0H4.81c-.63,0-1.1-.39-1.18-.99-.09-.64.4-1.25,1.05-1.29h14.48c.55,0,.98.29,1.14.77.26.74-.27,1.51-1.05,1.52Z"/>
-                </svg>
-            </button>   
+            <div class="nav-container">
+                <button class="nav-button" id="menu-toggle" aria-label="Toggle navigation">
+                    <svg class="navicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <rect width="24" height="24" rx="2.75" ry="2.75" fill="#8f6e54"/>
+                        <path fill="#fff" d="M19.28,20.3H4.88c-.62,0-1.06-.31-1.21-.83-.21-.7.3-1.43,1.03-1.45.64-.01,1.28,0,1.91,0h12.55c.56,0,.97.26,1.15.74.27.72-.23,1.49-1.03,1.54Z"/>
+                        <path fill="#fff" d="M19.3,5.81c-.55.02-1.09.01-1.62.01H4.85c-.56,0-.97-.27-1.15-.74-.27-.72.23-1.49,1.03-1.54h14.4c.62,0,1.05.3,1.21.82.21.71-.3,1.43-1.03,1.45Z"/>
+                        <path fill="#fff" d="M19.26,13.05c-.73.01-1.45,0-2.18,0H4.81c-.63,0-1.1-.39-1.18-.99-.09-.64.4-1.25,1.05-1.29h14.48c.55,0,.98.29,1.14.77.26.74-.27,1.51-1.05,1.52Z"/>
+                    </svg>
+                </button>
+            </div>
         </div>
         <nav id="navbar" style="display: none;" aria-label="Main navigation">
             <ul class="navbar">
@@ -38,13 +42,13 @@
             <h3>CATEGORIES</h3>
             <div class="category-grid">
                 <div class="category">
-                    <a href="#food">
+                    <a class="bukan-link" href="#food">
                         <img src="Asset/original-burger.jpg" alt="Food Category">
                         <h4>Food</h4>
                     </a>
                 </div>
                 <div class="category">
-                    <a href="#drinks">
+                    <a class="bukan-link" href="#drinks">
                         <img src="Asset/lemon-tea.jpg" alt="Drink Category">
                         <h4>Drink</h4>
                     </a>
@@ -57,41 +61,53 @@
         <div class="container">
             <h3>Food Items</h3>
             <div class="food-grid">
-                <div class="item"  data-id="1" data-nama="Original Burger" data-harga="35.000">
+                <div class="item" data-id="1" data-nama="Original Burger" data-harga="35.000">
                     <img src="Asset/original-burger.jpg">
                     <h4>Original Burger</h4>
                     <h4>Rp 35.000</h4>
-                    <button class="Order-button" alt="Original Burger"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Original Burger">
+                        <p class="Order-text">Add Order</p>
+                    </button> <!--order-button-->
                 </div>
-             <div class="item"  data-id="2" data-nama="Grilled Chicken" data-harga="40.000">
+             <div class="item" data-id="2" data-nama="Grilled Chicken" data-harga="40.000">
                     <img src="Asset/grilled-chicken.jpg" >
                     <h4>Grilled Chicken</h4>
                     <h4>Rp 40.000</h4>
-                    <button class="Order-button" alt="Grilled Chicken"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Grilled Chicken">
+                        <p class="Order-text">Add Order</p>
+                    </button> <!--order-button-->
                 </div>
-                <div class="item" data-id="3" data-nama="Special Biryani Rice" data-harga="50.000">
+                <div class="item"data-id="3" data-nama="Special Biryani Rice" data-harga="50.000">
                     <img src="Asset/special-biryani.jpg">
                     <h4>Special Biryani Rice</h4>
                     <h4>Rp 50.000</h4>
-                    <button class="Order-button" alt="Special Biryani Rice"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Special Biryani R
+                    ice"><p class="Order-text">Add Ord>
+                        r</p></button> <!--order-button-->
                 </div>
-                <div class="item" data-id="4" data-nama="original biryani" data-harga="38.000">
+                <div class="item"data-id="4" data-nama="original biryani" data-harga="38.000">
                     <img src="Asset/original-biryani.jpg" >
                     <h4>Original Biryani Rice</h4>
                     <h4>Rp 38.000</h4>
-                    <button class="Order-button" alt="original biryani"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="original biryani"
+                    ><p class="Order-text">Add Order</>
+                        ></button> <!--order-button-->
                 </div>
-                <div class="item" data-id="5" data-nama="Creamy Burger" data-harga="35.000">
+                <div class="item"data-id="5" data-nama="Creamy Burger" data-harga="35.000">
                     <img src="Asset/creamy-burger.jpg">
                     <h4>Creamy Burger</h4>
                     <h4>Rp 35.000</h4>
-                    <button class="Order-button" alt="Creamy Burger"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Creamy Burger"><p
+                         class="Order-text">Add Order</p><>
+                         button> <!--order-button-->
                 </div>
-                <div class="item" data-id="6" data-nama="Tandoori Chicken" data-harga="70.000">
+                <div class="item"data-id="6" data-nama="Tandoori Chicken" data-harga="70.000">
                     <img src="Asset/tandoori-chicken.jpg" >
                     <h4>Tandoori Chicken</h4>
                     <h4>Rp 70.000</h4>
-                    <button class="Order-button" alt="Tandoori Chicken"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Tandoori Chicken"
+                    ><p class="Order-text">Add Order</>
+                        ></button> <!--order-button-->
                 </div>
             </div>
         </div>
@@ -101,51 +117,98 @@
         <div class="container">
             <h3>Drinks</h3>
             <div class="drink-grid">
-                <div class="item" data-id="7" data-nama="Lemon Tea" data-harga="10.000">
+                <div class="item"data-id="7" data-nama="Lemon Tea" data-harga="10.000">
                     <img src="Asset/lemon-tea.jpg">
                     <h4>Lemon Tea</h4>
                     <h4>Rp 10.000</h4>
-                    <button class="Order-button" alt="Lemon Tea"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Lemon Tea"><p cla
+                        ss="Order-text">Add Order</p></but>
+                        on> <!--order-button-->
                 </div>
-                <div class="item" data-id="8" data-nama="Brown Delight" data-harga="25.000">
+                <div class="item"data-id="8" data-nama="Brown Delight" data-harga="25.000">
                     <img src="Asset/brown-delight.jpg" >
                     <h4>Brown Delight</h4>
                     <h4>Rp 25.000</h4>
-                    <button class="Order-button" alt="Brown Delight"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Brown Delight"><p
+                         class="Order-text">Add Order</p><>
+                         button> <!--order-button-->
                 </div>
-                <div class="item" data-id="Mocha Latte" data-nama="Mocha Latte" data-harga="20.000">
+                <div class="item"data-id="Mocha Latte" data-nama="Mocha Latte" data-harga="20.000">
                     <img src="Asset/mocha-latte.jpg" alt="Mocha Latte">
                     <h4>Mocha Latte</h4>
                     <h4>Rp 20.000</h4>
-                    <button class="Order-button" alt="Mocha Latte"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Mocha Latte"><p c
+                        lass="Order-text">Add Order</p></b>
+                        tton> <!--order-button-->
                 </div>
-                <div class="item" data-id="9" data-nama="Milkshake" data-harga="20.000">
+                <div class="item"data-id="9" data-nama="Milkshake" data-harga="20.000">
                     <img src="Asset/milkshake.jpg">
                     <h4>Milkshake</h4>
                     <h4>Rp 20.000</h4>
-                    <button class="Order-button" alt="Milkshake"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Milkshake"><p cla
+                        ss="Order-text">Add Order</p></but>
+                        on> <!--order-button-->
                 </div>
-                <div class="item" data-id="10" data-nama="Vanilla Latte" data-harga="30.000">
+                <div class="item"data-id="10" data-nama="Vanilla Latte" data-harga="30.000">
                     <img src="Asset/vanilla-latte.jpg">
                     <h4>Vanilla Latte</h4>
                     <h4>Rp 30.000</h4>
-                    <button class="Order-button" alt="Vanilla Latte"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Vanilla Latte"><p
+                         class="Order-text">Add Order</p><>
+                         button> <!--order-button-->
                 </div>
-                <div class="item" data-id="11" data-nama="Coco Milk" data-harga="20.000">
+                <div class="item"data-id="11" data-nama="Coco Milk" data-harga="20.000">
                     <img src="Asset/coco-milk.jpg" >
                     <h4>Coco Milk</h4>
                     <h4>Rp 20.000</h4>
-                    <button class="Order-button" alt="Coco Milk"><p class="Order-text">Add Order</p></button> <!--order-button-->
+                    <button class="Order-button" alt="Coco Milk"><p cla
+                        ss="Order-text">Add Order</p></but>
+                        on> <!--order-button-->
                 </div>
             </div>
         </div>
+    </section>
 
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <span class="close">&times;</span>
-                <button id="confirm">Konfirmasi</button>
+        <section class="cart-container">
+            <button class="cart-button">
+                <svg class="cart-icon" id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.2 80">
+                    <defs>
+                    <style>
+                        .cls-1 {
+                        fill: #fff;
+                        }
+                
+                        .cls-2 {
+                        fill: #a67c52;
+                        }
+                    </style>
+                    </defs>
+                    <g id="Layer_1-2" data-name="Layer_1">
+                    <g>
+                        <path class="cls-2" d="M40,0h60.2v80h-60.2C17.92,80,0,62.08,0,40H0C0,17.92,17.92,0,40,0Z"/>
+                        <path class="cls-1" d="M83.61,9.73c-.54,1.49-1.6,2.18-3.19,2.25-1.45.07-2.82,1.44-2.99,2.9-.5,4.35-.98,8.71-1.47,13.06-.51,4.51-1.01,9.02-1.52,13.52-.32,2.85-.64,5.71-.96,8.56-.56,4.93-3.03,8.59-7.32,11.05-.08.04-.15.08-.23.13-.04.02-.06.06-.06.06.26.94.61,1.84.76,2.78.72,4.54-2.35,8.77-6.89,9.56-.12.02-.24.08-.36.12h-2.11c-.25-.07-.5-.14-.75-.2-4.66-1.08-7.44-5.53-6.38-10.2.03-.15.06-.3.09-.5h-11.93c.42,1.55.52,3.09.07,4.62-1,3.38-3.25,5.41-6.69,6.15-.12.03-.24.08-.36.13h-2.11c-.12-.04-.24-.1-.37-.12-4.54-.77-7.7-5.1-6.96-9.54.77-4.69,4.97-7.78,9.62-7.09.54.08,1.09.16,1.63.16,7.44.01,14.88,0,22.32,0,.31,0,.61-.03.92-.04,1.22-.03,2.44-.05,3.65-.07.22,0,.44.04.65,0,2.04-.28,3.74-1.22,5.11-2.74.78-.86,1.39-1.84,1.72-3.06-.42,0-.77,0-1.11,0-11.13,0-22.25.04-33.38-.03-6.24-.04-11.67-4.33-13.3-10.35-.14-.52-.13-1.15,0-1.67.3-1.21,1.4-1.97,2.64-1.97,1.31,0,2.29.76,2.75,2.13,1.36,4.09,4.39,6.29,8.69,6.29,11.24,0,22.47,0,33.71,0,.26,0,.52,0,.83,0,.84-7.51,1.68-14.97,2.52-22.48-.33,0-.57,0-.81,0-4.06,0-8.12,0-12.18,0-1.92,0-3.22-1.59-2.83-3.42.28-1.33,1.43-2.2,2.96-2.2,4.24,0,8.47,0,12.71,0,.26,0,.51,0,.78,0,.1-.92.21-1.74.29-2.57.37-4.27,3.15-7.51,7.26-8.46,2.45-.57,3.68-.02,4.59,2.05v1.18ZM32.83,66.34c.44-1.08.21-2.31-.68-3.07-.32-.27-.79-.4-1.22-.49-.42-.1-.87-.1-1.31-.09-.27,0-.57.05-.8.18-1.11.61-1.63,1.92-1.3,3.16.32,1.19,1.42,2.03,2.68,2.04,1.17.01,2.19-.67,2.63-1.74ZM55.59,64.63c-.31,1.31.34,2.65,1.57,3.21,1.17.54,2.58.19,3.37-.82.81-1.03.76-2.49-.04-3.53-.58-.75-1.35-.79-2-.72-1.78,0-2.58.55-2.9,1.86Z"/>
+                    </g>
+                    </g>
+                </svg>
+            </button>
+        </section>
+
+        <section>
+                <h2>Keranjang</h2>
+            <div id="keranjang"></div>
+
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <h2>Konfirmasi Pesanan</h2>
+                    <p id="popup-nama"></p>
+                    <p>Harga: Rp <span id="popup-harga"></span></p>
+                    <label for="quantity">Jumlah:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button id="confirm">Konfirmasi</button>
+                </div>
             </div>
-        </div>
+        </section>
         
     <footer>
         <p>Contact us: +628100-XXXX-XXXX (WhatsApp) | Follow us on <a href="#" aria-label="Facebook">Facebook</a>, <a href="#" aria-label="Instagram">Instagram</a>, <a href="#" aria-label="Twitter">Twitter</a></p>

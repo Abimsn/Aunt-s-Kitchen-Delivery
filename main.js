@@ -1,6 +1,6 @@
 let keranjang = [];
 
-document.querySelectorAll('.item').forEach(item => {
+document.querySelectorAll('.Order-button').forEach(item => {
     item.addEventListener('click', () => {
         const id = item.getAttribute('data-id');
         const nama = item.getAttribute('data-nama');
