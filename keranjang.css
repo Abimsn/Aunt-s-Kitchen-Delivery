@@ -42,3 +42,17 @@
 .cart-button:active{
     transform: scale(1);
 }
+
+@media (max-width: 480px){
+    .cart-icon{
+        width: 32px;
+    }
+    .cart-container{
+        right: -50px;
+    }
+    .angka-keranjang{
+        size: 4px;
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+}

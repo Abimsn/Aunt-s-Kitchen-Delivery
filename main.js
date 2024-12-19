@@ -23,6 +23,12 @@ let keranjang = [];
             });
         });
 
+        document.getElementById('pembayaran').onclick = () => {
+            localStorage.setItem('keranjang', JSON.stringify(keranjang));
+            
+            window.location.href = 'pembayaran.html';
+        };
+
         function closechart() {
             document.getElementById('chart').style.display = 'none';
         }

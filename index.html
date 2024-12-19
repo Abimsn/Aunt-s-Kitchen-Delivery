@@ -219,11 +219,15 @@
                 <div class="chart-content">
                     <span class="close">&times;</span>
                     <h2 class="chart-text">Konfirmasi Pesanan</h2>
-                    <p class="chart-text" id="chart-nama"></p>
-                    <p class="chart-text">Harga: Rp <span id="chart-harga"></span></p>
-                    <label class="chart-text" for="quantity">Jumlah:</label>
-                    <input type="number" id="quantity" value="1" min="1">
-                    <button class="confirm-chart-button" id="confirm">Konfirmasi</button>
+                    <div class="item-details">
+                        <p class="chart-text" id="chart-nama"></p>
+                        <p class="chart-text">Harga: Rp <span id="chart-harga"></span></p>
+                        <label class="chart-text" for="quantity">Jumlah:</label>
+                        <input class="quantity-input" type="number" id="quantity" value="1" min="1">
+                    </div>
+                    <div class="button-container">
+                        <button class="confirm-chart-button" id="confirm">Konfirmasi</button>
+                    </div>
                 </div>
             </div>
         </section>
