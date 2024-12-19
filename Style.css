@@ -77,7 +77,7 @@ header {
   transform: scale(1.2);
 }
 
-.navicon:click{
+.navicon:active{
   transform: scale(1);
 }
 
@@ -144,6 +144,14 @@ nav a {
 
 .category:hover, .item:hover {
   transform: scale(1.05);
+}
+
+.Order-button:hover{
+  transform: scale(1.07);
+}
+
+.Order-button:active{
+  transform: scale(1);
 }
 
 .Order-button{

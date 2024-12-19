@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aunts Kitchen Resto</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="popup-chart.css">
     <link rel="stylesheet" href="keranjang.css">
     <link rel="stylesheet" href="benner/bener.css">
 </head>
@@ -183,7 +183,8 @@
     </section>
 
         <section class="cart-container">
-            <button class="cart-button">
+            <button class="cart-button" onclick="showKeranjangPopup()">
+                <p class="angka-keranjang" id="jumlah-item">0</p>
                 <svg class="cart-icon" id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.2 80">
                     <defs>
                     <style>
@@ -207,18 +208,24 @@
         </section>
 
         <section>
-                <h2>Keranjang</h2>
-            <div id="keranjang"></div>
+            <div class="chart" id="popup-keranjang" style="display:none;">
+                <div class="chart-content">
+                    <span class="close-keranjang" style="cursor:pointer;">&times;</span>
+                    <h3 class="chart-text">Isi Keranjang</h3>
+                    <div class="chart-text" id="isi-keranjang"></div>
+                    <button class="confirm-chart-button" id="pembayaran">Bayar</button>
+                </div>
+            </div>
 
-            <div id="popup" class="popup">
-                <div class="popup-content">
+            <div id="chart" class="chart">
+                <div class="chart-content">
                     <span class="close">&times;</span>
-                    <h2>Konfirmasi Pesanan</h2>
-                    <p id="popup-nama"></p>
-                    <p>Harga: Rp <span id="popup-harga"></span></p>
-                    <label for="quantity">Jumlah:</label>
+                    <h2 class="chart-text">Konfirmasi Pesanan</h2>
+                    <p class="chart-text" id="chart-nama"></p>
+                    <p class="chart-text">Harga: Rp <span id="chart-harga"></span></p>
+                    <label class="chart-text" for="quantity">Jumlah:</label>
                     <input type="number" id="quantity" value="1" min="1">
-                    <button id="confirm">Konfirmasi</button>
+                    <button class="confirm-chart-button" id="confirm">Konfirmasi</button>
                 </div>
             </div>
         </section>

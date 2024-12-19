@@ -5,7 +5,7 @@
   min-width: 80px;
   height: inherit;
   margin: auto;
-  z-index: 1000
+  z-index: 1000;
 }
 
 
@@ -27,6 +27,18 @@
     display: block;
 }
 
-.cart-icon:hover{
+.angka-keranjang{
+    color: white;
+    margin-top: 19px;
+    margin-left: 19px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.cart-button:hover{
     transform: scale(1.2);
+}
+
+.cart-button:active{
+    transform: scale(1);
 }
