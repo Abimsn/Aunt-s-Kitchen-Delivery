@@ -104,6 +104,12 @@ nav ul li {
   margin-right: 10px;
 }
 
+nav li{
+  padding: 5px;
+  background-color: #8f6e54;
+  border-radius: 8px;
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -146,6 +152,12 @@ nav a {
   transform: scale(1.05);
 }
 
+.Order-button{
+  background-color: #8f6e54;
+  border-radius: 10px;
+  border-style: hidden;
+}
+
 .Order-button:hover{
   transform: scale(1.07);
 }
@@ -153,13 +165,6 @@ nav a {
 .Order-button:active{
   transform: scale(1);
 }
-
-.Order-button{
-  background-color: #8f6e54;
-  border-radius: 10px;
-  border-style: hidden;
-}
-
 .Order-text{
   color: #ffff;
   padding: 3px;
